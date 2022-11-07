@@ -85,6 +85,13 @@ body {
 /*             ============================== MAIN CONTENT  ==============================            */
 
 
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+}
+
 .contact-container{
     border-radius: 4px;
     backdrop-filter: blur(25px); 
@@ -174,14 +181,16 @@ span:hover{
     }
 
     .main {
-        margin: 0 auto; 
+        /* margin: 0 auto;  */
+        margin-left: 5rem;
     }
 
     .container{
-        position: relative;
+        /* position: relative;
         top: 9rem;
-        left: 20rem;
+        left: 20rem; */
         width: min(70%, 90rem);
+        /* transform: translate(50%, 50%) */
     }
 
     .contact-container{

@@ -57,7 +57,6 @@ body {
     justify-content: center;
     color: var(--icons);
     transition: 600ms;
-
 }
 
 .link-text{
@@ -85,7 +84,6 @@ body {
         height: 50vh;
         top:calc(50% - 25vh); 
     }
-
 
     .navbar-container:hover{
         width: 16rem;
@@ -301,9 +299,9 @@ body {
 /* ............... Applies to all ...........  */
 
 
-.main{
+/* .main{
     width: 90%;
-}
+} */
 
 .container{
     margin-left: auto;
