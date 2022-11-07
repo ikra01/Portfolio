@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&family=Manrope:wght@200;300;400;600;800&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family:'Manrope', sans-serif;
+    background-color:#0B0C10;
+    /* CSS Variables */
+    --text-primary: #6D7DCA;
+    --text-secondary: #4732B3;
+    --titles: #A9AABC;
+    word-spacing: 3px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: var( --text-primary);
+}
+
+
+/*              ============================== NAV BAR ==============================            */
+
+.navbar-container{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(17, 21, 33);
+
+    position: fixed;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh; 
+    transition: width 200ms ease;
+}
+
+.nav-item{
+    width: 100%;
+    height: 100%;
+    top:calc(50% - 12vh);
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--text-primary);
+    transition: 600ms;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    font-weight: 800;
+}
+
+.nav-link svg{
+    min-width: 2rem; 
+}
+
+.nav-link:hover{
+    color: var(--text-secondary);
+    background-color:#1D2944;
+    transition: 600ms;
+    border-radius: 4px;
+}
+
+
+/*              ============================== PAGE CONTENT ==============================            */
+
+
+
+.section-containers{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    background: rgba(28, 34, 51,0.3); 
+    border: 1px solid rgba(19, 20, 65, 0.3);
+    cursor: pointer;
+}
+
+.section-containers:hover{
+    background: rgba(28, 34, 51,0.4); 
+}
+.main h1{
+    text-align: center;
+    color: var(--titles);
+    font-weight: 600;
+}
+
+.section-containers-skills{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    background: rgba(28, 34, 51,0.3); 
+    border: 1px solid rgba(19, 20, 65, 0.3);
+    cursor: pointer;
+}
+
+.section-containers-skills:hover{
+    background: rgba(28, 34, 51,0.4); 
+}
+ 
+
+.goals-list{
+    list-style: none;
+ }
+
+.emph-text {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.bullet-point {
+    color: var(--text-secondary);
+}
+
+
+
+/*  Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar-container{
+        width: 5rem;
+        height: 50vh;
+        top:calc(50% - 25vh); 
+    }
+
+    .navbar-container:hover{
+        width: 16rem;
+    }
+
+    .navbar-container:hover .link-text{
+        display: block; 
+    }
+
+    .main{
+        margin: 0 auto;    }
+
+    .section-containers{
+        max-width: 50%;
+        backdrop-filter: blur(25px); 
+        box-shadow: 0 10px 20px rgba(40, 40, 40, 0.5);
+    }
+
+    .section-containers-skills{
+        max-width: 48%;
+        backdrop-filter: blur(25px); 
+        box-shadow: 0 10px 20px rgba(40, 40, 40, 0.5);
+    }
+
+    .skill-bp{
+        display: flex;   
+    }
+     
+    .skill-bp-push{
+        position: absolute;
+        left: 20rem;
+        margin-right: 3rem;
+     }
+
+    .extra-text{
+        margin-bottom: 6rem;
+      
+     }
+}
+ 
+/* Small screens  */
+@media only screen and (max-width: 600px){
+    .navbar-container{
+        bottom:0rem;
+        width: 100vw;
+        height: 5rem;  
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    .main{
+        margin: 0 auto;
+    }
+
+    .section-containers{
+        height: auto;
+        width: min(70%, 90rem); 
+        box-shadow: 0 10px 20px rgba(40, 40, 40, 0.5); 
+    }
+
+    .section-containers-skills{
+        height: auto;
+        width: min(65%, 90rem); 
+        box-shadow: 0 10px 20px rgba(40, 40, 40, 0.5); 
+    }
+
+    .skill-bp{
+        list-style: none;
+        margin-bottom: 2rem;
+        margin-left: -2rem;
+    }
+    
+    .skill-bp-push{
+        margin-top: -0.5rem;
+     }
+
+    .last-container{
+        margin-bottom: 10rem;
+     }
+
+    .first-container{
+        margin-top: 2rem;
+     }
+
+     .skill-bp-title{
+        font-weight: 600;
+        color: var(--text-secondary);
+     }
+
+    .goals-bp{
+        padding-bottom: 1rem;
+     }
+}
+
+
+
+
+

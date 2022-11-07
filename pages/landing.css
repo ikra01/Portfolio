@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&family=Manrope:wght@200;300;400;600;800&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family:'Manrope', sans-serif;
+    background-color:#0B0C10;
+    /* CSS Variables */
+    --text-primary: #6D7DCA;
+    --text-secondary: #4732B3;
+    --titles: #A9AABC;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/*              ============================== NAV BAR ==============================            */
+
+.navbar-container{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(17, 21, 33);
+
+    position: fixed;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh; 
+    transition: width 200ms ease;
+}
+
+.nav-item{
+    width: 100%;
+    height: 100%;
+    top:calc(50% - 12vh);
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    justify-content: center;
+    color: var(--text-primary);
+    
+
+    transition: 600ms;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    font-weight: 800;
+}
+
+.nav-link svg{
+    min-width: 2rem; 
+}
+
+.nav-link:hover{
+    color: var(--text-secondary);
+    background-color:#1D2944;
+    transition: 600ms;
+    border-radius: 4px;
+}
+
+
+.intro-text{
+    font-size: 4vh;
+    background: -webkit-linear-gradient(var(--text-secondary), var(--text-primary));    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.highlight{
+    background: -webkit-linear-gradient( var(--titles), #98988F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/*              ============================== PAGE CONTENT ==============================            */
+
+
+.mainText{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#first-sentence{
+    font-family:'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 10vh;
+    background: -webkit-linear-gradient(var(--text-secondary), var(--text-primary));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text{
+    font-size: 4vh;
+    background: -webkit-linear-gradient(var(--text-secondary), var(--text-primary));    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.highlight{
+    background: -webkit-linear-gradient( var(--titles), #98988F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/*  Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar-container{
+        width: 5rem;
+        height: 50vh;
+        top:calc(50% - 25vh); 
+    }
+
+    .navbar-container:hover{
+        width: 16rem;
+    }
+
+    .navbar-container:hover .link-text{
+        display: block; 
+    }
+
+    .main {
+        margin: 0 auto; 
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+
+    .mainText{
+        width: min(90%, 90rem);
+        margin-top: 10rem;
+    }
+}
+
+
+/* Small screens  */
+@media only screen and (max-width: 600px){
+   
+    .navbar-container{
+        bottom:0rem;
+        width: 100vw;
+        height: 5rem;  
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+
+    .main{
+        margin: 0 auto;  
+    }
+
+    .mainText{
+        width: min(70%, 90rem);
+    }
+
+    .last-element{
+        margin-bottom: 10rem;
+        margin-top: 2rem;
+    }
+}
