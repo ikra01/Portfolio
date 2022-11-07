@@ -84,12 +84,16 @@ body {
 
 /*             ============================== MAIN CONTENT  ==============================            */
 
-
+.main{
+    /* height: 100%; */
+}
 
 .container{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+    /* margin-top: 20rem; */
+    /* margin: auto; */
 }
 
 .contact-container{
@@ -181,21 +185,40 @@ span:hover{
     }
 
     .main {
-        /* margin: 0 auto;  */
+       
         margin-left: 5rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /* vertical-align: middle; */
+        height: 100vh;
+     
+
+       
     }
 
     .container{
         /* position: relative;
         top: 9rem;
         left: 20rem; */
-        width: min(70%, 90rem);
-        /* transform: translate(50%, 50%) */
+        /* width: min(70%, 90rem); */
+     
+        /* margin: 0 auto;  */
+
+   
+        /* height: 50vh;
+        margin-top: calc(50%-25vh); */
+       
+
+        /* width: min(90%, 90rem); */
+        /* margin: 0 auto;  */
+        width: 60%;
+      
+        
     }
 
     .contact-container{
-        width: 50rem;
-        height:25rem;   
+        width: min(100%, 90rem); 
     }
 
 }
@@ -234,4 +257,42 @@ span:hover{
     }
 
 
+}
+
+
+.main {
+       
+    margin-left: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* vertical-align: middle; */
+    height: 100vh;
+ 
+
+   
+}
+
+.container{
+    /* position: relative;
+    top: 9rem;
+    left: 20rem; */
+    /* width: min(70%, 90rem); */
+ 
+    /* margin: 0 auto;  */
+
+
+    /* height: 50vh;
+    margin-top: calc(50%-25vh); */
+   
+
+    /* width: min(90%, 90rem); */
+    /* margin: 0 auto;  */
+    width: 60%;
+  
+    
+}
+
+.contact-container{
+    width: min(100%, 90rem); 
 }
