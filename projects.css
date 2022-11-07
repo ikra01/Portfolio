@@ -323,7 +323,7 @@ body {
     cursor: pointer;
     background: rgba(28, 34, 51,0.3); 
     box-shadow: 0 10px 20px rgba(40, 40, 40, 0.5);
-   /* border: 1px solid rgba(19, 20, 65, 0.3); */
+   border: 1px solid rgba(19, 20, 65, 0.3);
     width: 100%;
     position: relative;
 }
