@@ -103,7 +103,7 @@ body {
 
     .project-container{
         height: 26rem;
-        box-shadow: 12px 10px 5px rgba(40, 40, 40, 0.5);
+        /* box-shadow: 12px 10px 5px rgba(40, 40, 40, 0.5); */
     }
 
     .project-text{
@@ -196,7 +196,7 @@ body {
         display: flex;
         flex-direction: column;
         height: auto;
-        box-shadow: 5px 10px 10px rgba(40, 40, 40, 0.5);
+        /* box-shadow: 5px 10px 10px rgba(40, 40, 40, 0.5); */
     }
     
     .project-visual .image{
@@ -289,7 +289,11 @@ body {
     
     .project-type-text {
     font-size: 16px;
-}
+    }
+
+    .last-container{
+    margin-bottom: 8rem;
+    }
 }
 
 
@@ -309,7 +313,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     position: relative;
 }
 
@@ -323,6 +327,7 @@ body {
     cursor: pointer;
     background: rgba(28, 34, 51, 0.5); 
     border: 1px solid rgba(19, 20, 65, 0.3);
+    box-shadow: 12px 10px 5px rgba(40, 40, 40, 0.5);
     width: 100%;
     position: relative;
 }
